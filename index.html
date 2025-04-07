@@ -3,113 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Vitória Marquione</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imgport/V.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favcon.svg" type="image/x-icon">
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <img src="imgport/V.png" alt="" id="logo">
-            <li><a href="#qse">quem sou eu?</a></li>
-            <li><a href="#edc">formação</a></li>
-            <li><a href="#pjt">projetos</a></li>
-            <li><a href="#ctt">contato</a></li>
-            <li><img src="imgport/moon-stars.svg" alt="" class="moon"></li>
+    <nav id="menu-container">
+        <a href="#menu-container"><img src="img/v logo.svg" alt="" id="logo" data-dark="img/logo dark.svg"></a>
+        <button id="menu-mobile"><img src="img/menu-mobile.svg" alt=""></button>
+        <ul id="links-menu">
+            <li><a href="#sobre-mim">sobre mim</a></li>
+            <li><a href="#projetos">projetos</a></li>
+            <li><a href="#tecnologia">tecnologias</a></li>
+            <li><a href="#contato">contato</a></li>
+            <li id="dropdown">
+                <a href="">pt-br <img src="img/seta.svg" alt="" id="arrow-down"></a>
+                <ul id="dropdown-menu">
+                    <li><a href="">eng</a></li>
+                </ul>
+            </li>
+            <li><img src="img/moon.svg" alt="" id="changemode"></li>
         </ul>
     </nav>
-    <section class="home">
-        <span class="escrita">
+    <section id="home-container">
+        <div>
             <h1>Vitória Marquione</h1>
-            <h2 class="web">WEB <span class="borda">DEVELOPER</span></h2>
-        </span>
-        <img src="imgport/circle.png" alt="">
-    </section>
-    <section id="qse">
-        <span class="detalhe"></span>
-        <img src="imgport/dec.png" alt="" class="dec">
-        <img src="imgport/Design sem nome (13).png" alt="" class="me">
-        <span class="escrita">
-            <h1>Quem sou eu?</h1>
-            <p>Prazer, sou Vitória Cabido Marquione, tenho 22 anos, moro no interior de Minas Gerais 
-                e sou estudante de Analise e Desenvolvimento de Sistemas focada em estudar desenvolvimento web, 
-                sempre visando aprimorar meus conhecimentos na experiencia do usuário.</p>
-        </span>
-    </section>
-    <section id="edc">
-        <div class="edu">
-            <h1>formação</h1>
-            <h3>Analise e Desenvolvimento de Sistemas</h3>
-            <P>UNINTER</P>
-            <p>2023-2025</p>
-            <h1>cursos</h1>
-            <span class="curso">
-                <h3>Inglês</h3>
-                <P>KNN</P>
-                <p>2023 - 168h</p>
-            </span>
-            <span class="curso">
-                <h3 class="nomecurso">UI & UX</h3>
-                <P>Origamid</P>
-                <p class="ano">2023 - 104h</p>
-            </span>
-            <span class="curso">
-                <h3>HTML e CSS</h3>
-                <P>Origamid</P>
-                <p>2023 - 92h</p>
-            </span>
+            <h2>WEB <span>DEVELOPER</span></h2>
+            <a href="#" class="button-branco">fale comigo</a>
+            <a href="https://drive.google.com/file/d/1rZhpXcHyvrnmBB7KcMNUabvDk2WXwNmS/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button-preto">CV</a>
         </div>
-        <div class="exp">
-            <h1>experiência</h1>
-            <h3>Suporte Técnico</h3>
-            <P>NOVAPC</P>
-            <p>2023 - ATUALMENTE</p>
-            <h1>idiomas</h1>
-            <h3>Inglês</h3>
-            <P>B2</P>
-            <h3>Português</h3>
-            <P>Nativo</P>
-            <img src="imgport/dec2.png" alt="">
+        <div>
+            <img src="img/circle.png" alt="">
         </div>
     </section>
-    <section id="pjt">
-        <h1>projetos</h1>
-        <span class="projetos">
-            <span class="projeto1">
-                <a href="https://vitoriamarquione.github.io/">Portfólio</a>
-                <p class="descricao">Projeto de criação de um site dedicado a exibir meus projetos e demais feitos profissionais</p>
-                <p class="tecnologia">HTML</p>
-                <p class="tecnologia">CSS</p>
-                <p class="tecnologia">JS</p>
-                <a href="https://vitoriamarquione.github.io/" class="verpjt">ver projeto</a>
-            </span>
-        </span>
+    <section id="sobre-mim">
+        <div id="sobre-mim-container">
+            <div>
+                <img src="img/quem sou eu foto.png" alt="" id="fotoeu">
+            </div>
+            <div id="sobre-mim-bio">
+                <h1>Quem sou eu?</h1>
+                <p>Prazer, sou Vitória Marquione, 
+                    uma eterna apaixonada no comportamento humano e em tecnologia. 
+                    Usando essas duas paixões busco construir aplicações visando a satisfação das necessidades e conforto do usuário 
+                    sempre prezando por layouts responsivos e acessíveis<span class="blinker-point">|</span>
+                </p>
+            </div>
+        </div>
+        <div id="marquee-container">
+            <div>
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+            </div>
+            <div>
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>UI & UX DESIGN</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+                <p>WEB DEVELOPMENT</p>
+                <img src="img/v separador.svg" alt="" class="separador">
+            </div>
+        </div>
     </section>
-    <section id="ctt">
-        <span class="texto">
-            <h1>contato</h1>
-            <p>Estou disponível para novos projetos no momento. </p>
-            <p>Entre em contato comigo e marcamos uma conversa.</p>
-            <a href="">+55 (32) 9.99039823</a>
-            <a href="">vcmarquione@gmail.com</a>
-            <span class="icon">
-                <a href="https://www.linkedin.com/in/vit%C3%B3ria-marquione-167740250/" class="icon">
-                    <img src="imgport/linkedin.svg" alt="" class="icon">
-                </a>
-                <a href="https://github.com/vitoriamarquione" class="icon">
-                    <img src="imgport/github.svg" alt="" class="icon">
-                </a>
-            </span>
-        </span>
-        <form action="">
-            <label for="">Nome</label>
-            <input type="text">
-            <label for="">E-mail</label>
-            <input type="email">
-            <label for="">Mensagem</label>
-            <textarea name="" id=""></textarea>
-            <span class="botao">enviar</span>
-        </form>
+    <section id="projetos">
+        <h1>&lt; projetos /&gt;</h1>
+        <div class="projetos-container">
+            <div class="projeto-img">
+                <img src="img/em breve.png" alt="">
+            </div>
+            <div class="projetos-info">
+                <h2>nome do projeto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+                <ul class="tecnologia-nome">
+                    <li>tecnologia1</li>
+                    <li>tecnologia2</li>
+                    <li>tecnologia3</li>
+                </ul>
+                <a href="" class="button-preto">Visitar Site</a>
+                <a href="" class="button-branco">Ver codigo &lt;/&gt;</a>
+            </div>
+        </div>
+        <div class="projetos-container">
+            <div class="projeto-img-rigth">
+                <img src="img/em breve.png" alt="">
+            </div>
+            <div class="projetos-info-rigth">
+                <h2>nome do projeto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+                <ul class="tecnologia-nome">
+                    <li>tecnologia1</li>
+                    <li>tecnologia2</li>
+                    <li>tecnologia3</li>
+                </ul>
+                <a href="" class="button-preto">Visitar Site</a>
+                <a href="" class="button-branco">Ver codigo &lt;/&gt;</a>
+            </div>
+        </div>
+        <a href="projetos.html" class="button-preto" target="_blank" rel="noopener noreferrer"> Ver todos os projetos <img src="img/arrow-up-right.png" alt=""></a>
     </section>
+    <section id="tecnologia">
+        <div class="tech">
+            <h1>Tecnologias e Ferramentas</h1>
+        </div>
+        <p>Tenho orgulho de mostrar meu amplo conhecimento e experiência em desenvolvimento web,
+            utilizando uma ampla gama de ferramentas e tecnologias modernas para fornecer soluções de alta qualidade.
+        </p>
+        <div id="filtro">
+            <ul class="filtro">
+                <li class="filterbutton activefilter" data-name="all">Todas</li>
+                <li class="filterbutton" data-name="frameworks">frameworks</li>
+                <li class="filterbutton" data-name="linguagens">linguagens</li>
+                <li class="filterbutton" data-name="ferramentas">ferramentas</li>
+            </ul>
+            <ul id="ferramentas">
+                <li><img src="img/bootstrap.png" alt="" class="icone-ferramenta" id="bootstrap" data-name="frameworks"></li>
+                <li><img src="img/css.png" alt="" class="icone-ferramenta" id="css" data-name="linguagens"></li>
+                <li><img src="img/figma.png" alt="" class="icone-ferramenta" id="figma" data-name="Ferramentas"></li>
+                <li><img src="img/html.png" alt="" class="icone-ferramenta" id="html" data-name="linguagens"></li>
+                <li><img src="img/js.png" alt="" class="icone-ferramenta" id="js" data-name="linguagens"></li>
+                <li><img src="img/tail.png" alt="" class="icone-ferramenta" id="tail" data-name="frameworks"></li>
+                <li><img src="img/vscode.png" alt="" class="icone-ferramenta" id="vscode" data-name="ferramentas"></li>
+            </ul>
+        </div>
+    </section>
+    <section id="contato">
+        <div>
+            <p>
+                Estou disponível para novos projetos no momento.
+            </p>
+            <p>
+                Entre em contato comigo e marcamos uma conversa.
+            </p>
+        </div>
+        <div>
+            <div id="contato-numero">
+                <p>+55(32)9 9903-9823</p>
+                <p>vcmarquione@gmail.com</p>
+            </div>
+            <div id="icone-redesocial">
+                <a href="https://www.linkedin.com/in/vit%C3%B3ria-marquione-167740250/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.svg" alt="" id="linkedin"></a>
+                <a href="https://api.whatsapp.com/send/?phone=5532999039823&text&type=phone_number&app_absent=0"><img src="img/whatsapp.svg" alt="" id="whatsapp"></a>
+                <a href="https://github.com/vitoriamarquione"><img src="img/github.svg" alt="" id="github"></a>
+            </div>
+        </div>
+
+    </section>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
