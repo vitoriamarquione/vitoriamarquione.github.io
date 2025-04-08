@@ -1,15 +1,15 @@
 export default function initFilterTab() {
     const filterButtons = document.querySelectorAll(".filterbutton");
-    const iconeferramenta = document.querySelectorAll(".icone-ferramenta");
+    const toolIcon = document.querySelectorAll(".tool-icon");
 
     const filter = e => {
         document.querySelector(".activefilter").classList.remove("activefilter");
         e.target.classList.add("activefilter");
 
-        iconeferramenta.forEach(icone => {
-            icone.classList.add("hide");
-            if(icone.dataset.name === e.target.dataset.name || e.target.dataset.name === "all") {
-                icone.classList.remove("hide");
+        toolIcon.forEach(icon => {
+            icon.classList.add("hide");
+            if(icon.dataset.name === e.target.dataset.name || e.target.dataset.name === "all") {
+                icon.classList.remove("hide");
             }
         });
     };

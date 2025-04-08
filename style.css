@@ -1,4 +1,4 @@
-/*IMPORTAÇÕES*/
+/*IMPORTS*/
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
@@ -26,7 +26,7 @@
 
 }
 
-/*----------GLOBAIS----------*/
+/*----------GLOBAL----------*/
 body {
     margin: 0px;
     padding: 0px;
@@ -136,7 +136,7 @@ p {
     height: 500px;
 }
 
-.button-branco {
+.button-white {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 10px 40px;
@@ -144,7 +144,7 @@ p {
     font-family: var(--font-corpo);
 }
 
-.button-preto {
+.button-black {
     background-color: var(--border-color);
     font-family: var(--font-corpo);
     color: var(--font-color);
@@ -160,26 +160,26 @@ p {
 }
 
 
-/*---------- SOBRE MIM -----------*/
+/*---------- ABOUT ME -----------*/
 
-#sobre-mim {
+#about-me {
     padding: 80px;
     padding-bottom: 80px;
     position: relative;
 }
-#sobre-mim-container {
+#about-me-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#sobre-mim-bio h1 {
+#about-me-bio h1 {
     font-size: 40px;
     font-family: var(--font-destaque);
     text-align: center;
     margin-bottom: 40px;
 }
 
-#sobre-mim-bio p {
+#about-me-bio p {
     font-size: 1.1rem;
     font-family: var(--font-typing);
     line-height: 40px;
@@ -189,7 +189,7 @@ p {
     font-size: 24px;
     animation: blink .4s step-end infinite alternate;
 }
-#sobre-mim-container img {
+#about-me-container img {
     max-width: 600px;
 }
 #marquee-container {
@@ -230,30 +230,30 @@ p {
         opacity: 0;
     }
 }
-/*---------- PROJETOS -----------*/
+/*---------- PROJECTS -----------*/
 
-#projetos {
+#projects {
     padding-bottom: 120px;
     padding-left: 40px;
     padding-right: 40px;
     justify-items: center;
 }
 
-#projetos h1 {
+#projects h1 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
     font-family: var(--font-destaque);
 }
 
-#projetos h2 {
+#projects h2 {
     font-family: var(--font-destaque);
 }
 
-#projetos p {
+#projects p {
     font-family: var(--font-corpo);
 }
-.projetos-container {
+.projects-container {
     align-items: center;
     display: flex;
     gap: 50px;
@@ -266,17 +266,17 @@ p {
     position: relative;
 }
 
-.projetos-info{
+.projects-info{
     position: absolute;
     left: 30%;
     margin: 0px 24px;
 }
-.projeto-img-rigth {
+.projects-img-rigth {
     position: absolute;
     left: 70%;
 }
 
-.projetos-info-rigth {
+.projects-info-rigth {
     position: absolute;
     right: 30%;
     margin: 0px 24px;
@@ -290,14 +290,14 @@ p {
     margin-bottom: 32px;
 }
 
-.projeto-img {
+.projects-img {
     position: absolute;
     left: -40%;
 }
 
 
-/*---------- TECNOLOGIA -----------*/
-#tecnologia {
+/*---------- TECHNOLOGY -----------*/
+#technology {
     background-image: var(--background-grid);
 }
 
@@ -315,7 +315,7 @@ p {
     top: 0px;
     left: 0px;
 }
-#tecnologia h1 {
+#technology h1 {
     font-size: 40px;
     font-family: var(--font-destaque);
     padding: 70px;
@@ -323,7 +323,7 @@ p {
     background-repeat: no-repeat;
 }
 
-#tecnologia p {
+#technology p {
     font-size: 20px;
     font-family: var(--font-corpo);
     text-align: center;
@@ -333,7 +333,7 @@ p {
     margin-bottom: 80px;
 }
 
-#filtro ul {
+#filter ul {
     font-size: 28px;
     font-family: var(--font-corpo);
     gap: 20px;
@@ -342,7 +342,7 @@ p {
     color: var(--font-color-menu);
 }
 
-#ferramentas {
+#tool {
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -351,7 +351,7 @@ p {
     padding: 80px;
 }
 
-.filtro li {
+.filter li {
     border-bottom: 2px solid #A5A5A5;
     padding: 0px 40px;
     margin: -10px;
@@ -363,18 +363,18 @@ li.activefilter {
     border-color: var(--border-color);
 }
 
-.icone-ferramenta {
+.tool-icon {
     background-color: var(--background);
     padding: 10px 20px;
     border: 1px solid var(--font-color-menu);
     border-radius: 4px;
 }
 
-.icone-ferramenta.hide {
+.tool-icon.hide {
     display: none;
 }
-/*---------- CONTATO -----------*/
-#contato {
+/*---------- CONTACT -----------*/
+#contact {
     justify-content: center;
     align-items: center;
     font-size: 20px;
@@ -387,20 +387,20 @@ li.activefilter {
     line-height: 10px;
 }
 
-#icone-redesocial {
+#socialmedia-icon {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
-#icone-redesocial img {
+#socialmedia-icon img {
     height: 35px;
 }
 
-#contato-numero {
+#contact-number {
     justify-items: center;
 }
 
-/*---------- RESPONSIVIDADE -----------*/
+/*---------- RESPONSIVE -----------*/
 
 /*---------- TABLET -----------*/
 @media (max-width: 1023px) {
@@ -447,7 +447,7 @@ li.activefilter {
         display: none;
     }
 
-    #projetos h1 {
+    #projects h1 {
         font-size: 2rem;
         margin: 40px;
     }
@@ -487,11 +487,11 @@ li.activefilter {
         max-width: 300px;
     }
 
-    #filtro ul {
+    #filter ul {
         font-size: 1.2em;
     }
 
-    #contato {
+    #contact {
         text-align: center;
         display: block;
         line-height: 20px;
@@ -501,7 +501,7 @@ li.activefilter {
 
 }
 
-/*---------- CELULAR -----------*/
+/*---------- SMARTPHONE -----------*/
 @media (max-width: 767px) {
     #home-container {
         text-align: center;
@@ -549,15 +549,15 @@ li.activefilter {
     #links-menu li {
         text-align: center;
     }
-    .button-branco {
+    .button-white {
         font-size: 1rem;
         padding: 5px 20px;
     }
-    .button-preto {
+    .button-black {
         font-size: 1rem;
         padding: 5px 20px;
     }
-    #sobre-mim {
+    #about-me {
         padding: 0px;
     }
     #sobre-mim-container {
@@ -582,7 +582,7 @@ li.activefilter {
     }
 
 
-    #projetos h1 {
+    #projects h1 {
         font-size: 2rem;
         margin: 40px;
     }
@@ -622,18 +622,18 @@ li.activefilter {
         max-width: 300px;
     }
 
-    #tecnologia h1 {
+    #technology h1 {
         font-size: 2rem;
         padding: 8%;
     }
-    #tecnologia p {
+    #technology p {
         font-size: 1rem;
         padding: 0px;
         margin: 4%;
 
     }
 
-    .filtro li {
+    .filter li {
         font-size: 1rem;
         padding: 2%;
         margin-top: 4%;
@@ -642,14 +642,14 @@ li.activefilter {
     .tech {
         background-image: none;
     }
-    #ferramentas {
+    #tool {
         padding: 1%;
     }
 
-    .icone-ferramenta {
+    .tool-icon {
         height: 28px;
     }
-    #contato {
+    #contact {
         text-align: center;
         display: block;
         line-height: 20px;
