@@ -16,4 +16,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Acessibilidade
 - [ ] Versão em Inglês
-- [ ] Melhorar a nomeação das classes, id e demais variaveis
+- [ ] Scroll suave
+- [ ] Animação inicial
+- [ ] Melhora da responsividade para celular
+
